@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.aboutUs {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+
+  &__paragraph {
+    width: 80%;
+  }
+
+  &__image {
+    width: 20rem;
+  }
+}

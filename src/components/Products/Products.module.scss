@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.product {
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f6f6f6;
+  margin: 1rem 1rem 3rem 1rem;
+  border: 0.1rem solid black;
+}
+
+.image {
+  height: 10rem;
+  width: 10rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+.priceInformation {
+  border: 0.1rem solid black;
+  background-color: #fff;
+  outline: none;
+  padding: 0.2rem;
+  margin-top: 0.1rem;
+
+  &:active {
+    transform: translateY(-1px);
+    border: 0.2rem solid black;
+    margin-top: 0rem;
+  }
+}

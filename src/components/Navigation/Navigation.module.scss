@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100vh;
+}
+.logo {
+  margin: 0 auto;
+  width: 22rem;
+  height: 22rem;
+}
+.choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 20rem;
+}
+
+.link {
+  font-size: 2rem;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.link:hover {
+  border-bottom: 2px solid black;
+}
