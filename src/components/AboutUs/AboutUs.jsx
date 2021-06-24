@@ -9,7 +9,7 @@ const AboutUs = () => {
       <p className={styles.aboutUs__paragraph}>
         If you're looking for where to buy vinyl records, you've come to the
         right place! Welcome to Vinyl Records. Build your dream collection with
-        our helop!
+        our help!
         <br />
         Save time by shopping on our app and we'll deliver the vinyl records
         right to your home.

@@ -14,6 +14,10 @@ html {
   background-color: #f6f6f6;
   margin: 1rem 1rem 3rem 1rem;
   border: 0.1rem solid black;
+
+  &:first-child {
+    margin: 6rem 1rem 3rem 1rem;
+  }
 }
 
 .image {

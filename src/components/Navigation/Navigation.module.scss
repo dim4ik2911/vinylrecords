@@ -10,25 +10,26 @@ html {
 
 .navigation {
   display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  min-height: 100vh;
+  align-items: center;
+  height: 12rem;
+  border-bottom: 0.3rem solid black;
 }
 .logo {
-  margin: 0 auto;
-  width: 22rem;
-  height: 22rem;
+  // margin: 0 auto;
+  width: 10rem;
+  height: 10rem;
 }
 .choice {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
-  height: 20rem;
+  // height: 20rem;
 }
 
 .link {
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: black;
   text-decoration: none;
   border-bottom: 2px solid transparent;
