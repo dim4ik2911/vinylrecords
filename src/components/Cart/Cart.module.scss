@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.cart {
+  min-height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  &__header {
+    margin: 4rem auto;
+    font-size: 2rem;
+  }
+  &__paragraph {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+  }
+  &__button {
+    width: 5rem;
+    height: 3rem;
+    margin: auto;
+    background-color: red;
+    border: 0.3rem solid red;
+    color: white;
+    margin-top: 0.1rem;
+
+    &:active {
+      transform: translateY(-1px);
+      background-color: rgb(187, 0, 0);
+      border: 0.3rem solid rgb(187, 0, 0);
+      margin-top: 0rem;
+    }
+  }
+}

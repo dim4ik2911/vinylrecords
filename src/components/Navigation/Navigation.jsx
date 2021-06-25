@@ -8,6 +8,14 @@ import Cart from "../Cart";
 import Logo from "../../images/logo.png";
 
 const Navigation = () => {
+  const [totalPurchase, setTotalPurchase] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
+  console.log(totalPrice);
+  // const updatePrice = (added) => {
+  //   console.log(price);
+  //   return setPrice(price + added);
+  // };
+
   return (
     <>
       <Router>
@@ -25,7 +33,7 @@ const Navigation = () => {
                 Products
               </Link>
               <Link className={styles.link} to="/cart">
-                Cart
+                Cart ({totalPurchase.length})
               </Link>
             </div>
           </div>
@@ -37,10 +45,19 @@ const Navigation = () => {
               <AboutUs />
             </Route>
             <Route path="/products">
-              <Products />
+              <Products
+                totalPurchase={totalPurchase}
+                setTotalPurchase={setTotalPurchase}
+                totalPrice={totalPrice}
+                setTotalPrice={setTotalPrice}
+              />
             </Route>
             <Route path="/cart">
-              <Cart />
+              <Cart
+                totalPurchase={totalPurchase}
+                setTotalPurchase={setTotalPurchase}
+                totalPrice={totalPrice}
+              />
             </Route>
           </Switch>
         </>

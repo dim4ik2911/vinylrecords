@@ -12,7 +12,8 @@ const vinylRecordsData = [
     album: "Never Mind The Bollocks",
     musician: "Sex Pistols",
     year: 1977,
-    price: "55£",
+    price: 55,
+    amount: 0,
   },
   {
     id: 2,
@@ -20,7 +21,8 @@ const vinylRecordsData = [
     album: "Sgt Pepper’s Lonely Hearts Club Band",
     musician: "The Beatles",
     year: 1967,
-    price: "65£",
+    price: 65,
+    amount: 0,
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ const vinylRecordsData = [
     album: "Demon Days",
     musician: "Gorillaz",
     year: 2005,
-    price: "35£",
+    price: 35,
+    amount: 0,
   },
   {
     id: 4,
@@ -36,7 +39,8 @@ const vinylRecordsData = [
     album: "Born to Die",
     musician: "Lana del Rey",
     year: 2012,
-    price: "30£",
+    price: 30,
+    amount: 0,
   },
   {
     id: 5,
@@ -44,7 +48,8 @@ const vinylRecordsData = [
     album: "Nevermind",
     musician: "Nirvana",
     year: 1991,
-    price: "50£",
+    price: 50,
+    amount: 0,
   },
   {
     id: 6,
@@ -52,7 +57,8 @@ const vinylRecordsData = [
     album: "Dark Side of the Moon",
     musician: "Pink Floyd",
     year: 1973,
-    price: "60£",
+    price: 60,
+    amount: 0,
   },
 ];
 
