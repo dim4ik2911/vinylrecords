@@ -30,13 +30,32 @@ html {
     background-color: red;
     border: 0.3rem solid red;
     color: white;
-    margin-top: 0.1rem;
+  }
+}
 
-    &:active {
-      transform: translateY(-1px);
-      background-color: rgb(187, 0, 0);
-      border: 0.3rem solid rgb(187, 0, 0);
-      margin-top: 0rem;
-    }
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+
+  &__paragraph {
+    font-size: 2rem;
+    text-align: center;
+    width: 70%;
+    color: #000;
+    margin-bottom: 3rem;
+  }
+
+  &__button {
+    width: 10rem;
+    height: 4rem;
+
+    background-color: red;
+    border: 0.3rem solid red;
+    color: white;
+    margin-top: 0.1rem;
   }
 }
