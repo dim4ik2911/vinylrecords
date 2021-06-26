@@ -67,7 +67,7 @@ const Cart = (props) => {
                 </p>
 
                 <Link
-                  to="/"
+                  to="vinylrecords/home"
                   className={styles.modal__button}
                   onClick={(onClick, restartShopping)}
                 >

@@ -13,7 +13,7 @@ const Home = () => {
           records delivered straight to your doorstep.
         </p>
         {/* <button className={styles.home__button}>Start shopping</button> */}
-        <Link to="/products" className={styles.home__button}>
+        <Link to="vinylrecords/products" className={styles.home__button}>
           Start shopping
         </Link>
       </div>
