@@ -1,15 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "../../styles/styles.scss";
 
-html {
-  font-size: 62.5%;
-}
 
 .homePage {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

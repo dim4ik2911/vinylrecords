@@ -1,12 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "../../styles/styles.scss";
 
-html {
-  font-size: 62.5%;
-}
+
 
 .navigation {
   display: flex;
@@ -36,4 +30,27 @@ html {
 }
 .link:hover {
   border-bottom: 2px solid black;
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 7rem;
+  }
+  .logo {
+    // margin: 0 auto;
+    width: 6rem;
+    height: 6rem;
+  }
+  .choice {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    // height: 20rem;
+  }
+  .link {
+    font-size: 1.2rem;
+  }
 }

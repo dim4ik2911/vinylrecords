@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 576px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 125%;
+  }
+}

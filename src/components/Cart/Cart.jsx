@@ -65,12 +65,7 @@ const Cart = (props) => {
                 <p className={styles.modal__paragraph}>
                   We are appreciated you choose our service!
                 </p>
-                {/* <button
-                  className={styles.modal__button}
-                  onClick={(onClick, restartShopping)}
-                >
-                  Thank you!
-                </button> */}
+
                 <Link
                   to="/"
                   className={styles.modal__button}
@@ -81,13 +76,12 @@ const Cart = (props) => {
                 <Confetti
                   width={width}
                   height={height}
-                  numberOfPieces={95}
+                  numberOfPieces={30}
                   gravity={0.05}
                 />
               </div>
             )}
           </ReactCircleModal>
-          {/* <button className={styles.cart__button}>Pay</button> */}
         </div>
       )}
     </>

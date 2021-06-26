@@ -1,12 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "../../styles/styles.scss";
 
-html {
-  font-size: 62.5%;
-}
+
 
 .cart {
   min-height: 80vh;
@@ -31,6 +25,7 @@ html {
     border: 0.3rem solid red;
     color: white;
     margin-bottom: 3rem;
+    font-size: 1.2rem;
   }
   &__table {
     &_purchase {
