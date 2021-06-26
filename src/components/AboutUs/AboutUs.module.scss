@@ -1,6 +1,5 @@
 @import "../../styles/styles.scss";
 
-
 .aboutUs {
   min-height: 100vh;
   display: flex;
@@ -9,11 +8,17 @@
   align-items: center;
   font-size: 1.5rem;
 
+  &__title {
+    margin: 2rem auto;
+  }
+
   &__paragraph {
     width: 80%;
+    margin: 2rem auto;
   }
 
   &__image {
     width: 20rem;
+    margin: 2rem auto;
   }
 }
