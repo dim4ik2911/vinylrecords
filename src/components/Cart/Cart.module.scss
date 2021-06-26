@@ -20,25 +20,54 @@ html {
     font-size: 2rem;
   }
   &__paragraph {
-    margin-bottom: 4rem;
+    margin: 3rem auto;
     font-size: 1.5rem;
   }
   &__button {
     width: 5rem;
     height: 3rem;
-    margin: auto;
+    margin: 0 auto;
     background-color: red;
     border: 0.3rem solid red;
     color: white;
+    margin-bottom: 3rem;
+  }
+  &__table {
+    &_purchase {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto 1rem auto;
+    }
+
+    &_image {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
+
+    &_description {
+      display: flex;
+      flex-direction: column;
+      // margin: 0 auto;
+      font-size: 1.1rem;
+    }
+
+    &_amount {
+      width: 4.5rem;
+      font-size: 1.4rem;
+    }
   }
 }
 
+//modal
 .modal {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
   background-color: #fff;
 
   &__paragraph {
@@ -56,6 +85,11 @@ html {
     background-color: red;
     border: 0.3rem solid red;
     color: white;
-    margin-top: 0.1rem;
+    text-decoration: none;
+    // margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
   }
 }

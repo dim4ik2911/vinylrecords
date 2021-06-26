@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import styles from "./Navigation.module.scss";
 import Home from "../Home";
@@ -10,11 +10,19 @@ import Logo from "../../images/logo.png";
 const Navigation = () => {
   const [totalPurchase, setTotalPurchase] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
-  console.log(totalPrice);
-  // const updatePrice = (added) => {
-  //   console.log(price);
-  //   return setPrice(price + added);
-  // };
+  const [totalAmount, setTotalAmount] = useState(0);
+
+  //check how many vinyl records in cart
+  useEffect(() => {
+    if (!totalPurchase.length) {
+      setTotalAmount(0);
+    }
+    let total = 0;
+    for (let i = 0; i < totalPurchase.length; i++) {
+      total = total + totalPurchase[i].amount;
+      setTotalAmount(total);
+    }
+  }, [totalPrice]);
 
   return (
     <>
@@ -33,7 +41,7 @@ const Navigation = () => {
                 Products
               </Link>
               <Link className={styles.link} to="/cart">
-                Cart ({totalPurchase.length})
+                Cart ({totalAmount})
               </Link>
             </div>
           </div>
@@ -57,6 +65,7 @@ const Navigation = () => {
                 totalPurchase={totalPurchase}
                 setTotalPurchase={setTotalPurchase}
                 totalPrice={totalPrice}
+                setTotalPrice={setTotalPrice}
               />
             </Route>
           </Switch>

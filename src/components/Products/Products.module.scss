@@ -30,10 +30,10 @@ html {
 .description {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 0.9rem;
   padding: 0 0.5rem;
-  margin: 0 auto;
+  margin: 0.3rem auto;
 }
 
 .priceInformation {
@@ -54,12 +54,12 @@ html {
   position: absolute;
   right: 0.1rem;
   top: 0.1rem;
+  border: none;
+  border-radius: 50%;
+  padding: 0 0.2rem;
   font-size: 1.2rem;
-  outline: none;
-  border: 0.1rem solid red;
-  padding: 0 0.1rem;
-  color: red;
-  background-color: inherit;
+  color: #fff;
+  background-color: red;
 }
 .amount {
   position: absolute;

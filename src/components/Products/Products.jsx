@@ -5,12 +5,28 @@ import data from "../../data/data.js";
 const Products = (props) => {
   const { totalPurchase, setTotalPurchase, totalPrice, setTotalPrice } = props;
 
-  // console.log(price);
+  //delete a purchase
+  const handleDeleteClick = (one) => {
+    setTotalPurchase(
+      totalPurchase.filter((purchase) => {
+        return totalPurchase.indexOf(one) !== totalPurchase.indexOf(purchase);
+      })
+    );
+    setTotalPrice(totalPrice - one.amount * one.price);
+    one.amount = 0;
+  };
+
+  //add a purchase
   const handlePurchaseClick = (one) => {
-    // setPrice(price + one.price);
-    // updatePrice(one.price);
-    setTotalPurchase([...totalPurchase, one]);
-    setTotalPrice(totalPrice + one.price);
+    if (!one.amount) {
+      one.amount++;
+      setTotalPurchase([...totalPurchase, one]);
+      setTotalPrice(totalPrice + one.price);
+    } else {
+      one.amount++;
+      setTotalPrice([...totalPurchase]);
+      setTotalPrice(totalPrice + one.price);
+    }
   };
 
   return (
@@ -29,8 +45,6 @@ const Products = (props) => {
                 <button
                   onClick={() => {
                     handlePurchaseClick(one);
-                    one.amount++;
-                    // updatePrice(one.price);
                   }}
                   className={styles.priceInformation}
                 >
@@ -38,20 +52,19 @@ const Products = (props) => {
                 </button>
               </div>
             </div>
-            {/* <div>
-              {one.amount == 0 ? null : (
-                <button
-                  // onClick={(one) => (one.amount = 0)}
 
-                  className={styles.delete}
-                >
-                  x
-                </button>
-              )}
-            </div> */}
-            <div className={styles.amount}>
-              {one.amount == 0 ? null : <p>{one.amount}</p>}
-            </div>
+            <button
+              className={styles.delete}
+              onClick={() => handleDeleteClick(one)}
+            >
+              {one.amount === 0 ? null : <p>x</p>}
+            </button>
+
+            {/* <div className={styles.amount}> */}
+            {one.amount === 0 ? null : (
+              <p className={styles.amount}>{one.amount}</p>
+            )}
+            {/* </div> */}
           </li>
         );
       })}
