@@ -31,28 +31,28 @@ const Navigation = () => {
           <div className={styles.navigation}>
             <img className={styles.logo} src={Logo} />
             <div className={styles.choice}>
-              <Link className={styles.link} to="/vinylrecords/home">
+              <Link className={styles.link} to="/vinylrecords">
                 Home
               </Link>
-              <Link className={styles.link} to="vinylrecords/aboutus">
+              <Link className={styles.link} to="/vinylrecords/aboutus">
                 About us
               </Link>
-              <Link className={styles.link} to="vinylrecords/products">
+              <Link className={styles.link} to="/vinylrecords/products">
                 Products
               </Link>
-              <Link className={styles.link} to="vinylrecords/cart">
+              <Link className={styles.link} to="/vinylrecords/cart">
                 Cart ({totalAmount})
               </Link>
             </div>
           </div>
           <Switch>
-            <Route exact path="vinylrecords/home">
+            <Route exact path="/vinylrecords">
               <Home />
             </Route>
-            <Route path="vinylrecords/aboutus">
+            <Route path="/vinylrecords/aboutus">
               <AboutUs />
             </Route>
-            <Route path="vinylrecords/products">
+            <Route path="/vinylrecords/products">
               <Products
                 totalPurchase={totalPurchase}
                 setTotalPurchase={setTotalPurchase}
@@ -60,7 +60,7 @@ const Navigation = () => {
                 setTotalPrice={setTotalPrice}
               />
             </Route>
-            <Route path="vinylrecords/cart">
+            <Route path="/vinylrecords/cart">
               <Cart
                 totalPurchase={totalPurchase}
                 setTotalPurchase={setTotalPurchase}

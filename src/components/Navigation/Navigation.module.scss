@@ -1,7 +1,5 @@
 @import "../../styles/styles.scss";
 
-
-
 .navigation {
   display: flex;
   justify-content: space-evenly;
@@ -10,7 +8,6 @@
   border-bottom: 0.3rem solid black;
 }
 .logo {
-  // margin: 0 auto;
   width: 10rem;
   height: 10rem;
 }
@@ -19,7 +16,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  // height: 20rem;
 }
 
 .link {
@@ -40,7 +36,6 @@
     height: 7rem;
   }
   .logo {
-    // margin: 0 auto;
     width: 6rem;
     height: 6rem;
   }
@@ -48,9 +43,12 @@
     flex-direction: row;
     justify-content: space-evenly;
     width: 80%;
-    // height: 20rem;
   }
   .link {
     font-size: 1.2rem;
+
+    &:last-child {
+      width: 6%;
+    }
   }
 }
