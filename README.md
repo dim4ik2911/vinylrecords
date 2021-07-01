@@ -1,4 +1,5 @@
 
+
 <h1 align="center">Vinyl Records Online Store</h1>
 
 <h4 align="center">React , CSS(SASS)</h4>
@@ -8,6 +9,6 @@
                 made using React Routing. Functionality is created using props
                 and state hook. For deployment was used Firebase.</h2>
 <div align="center">
-<img align="center" src="https://user-images.githubusercontent.com/75121895/124175455-8c1b7200-daa5-11eb-9b48-2213d87ec2d7.png">
+<img align="center" src="https://user-images.githubusercontent.com/75121895/124175806-f6ccad80-daa5-11eb-9315-ab2c4728ddd2.png">
 </div>
 
