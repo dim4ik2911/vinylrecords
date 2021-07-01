@@ -31,7 +31,7 @@ const Navigation = () => {
           <div className={styles.navigation}>
             <img className={styles.logo} src={Logo} />
             <div className={styles.choice}>
-              <Link className={styles.link} to="/vinylrecords/">
+              <Link className={styles.link} to="/">
                 Home
               </Link>
               <Link className={styles.link} to="/vinylrecords/aboutus">
@@ -46,7 +46,7 @@ const Navigation = () => {
             </div>
           </div>
           <Switch>
-            <Route exact path="/vinylrecords/">
+            <Route exact path="/">
               <Home />
             </Route>
             <Route path="/vinylrecords/aboutus">
