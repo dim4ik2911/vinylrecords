@@ -2,7 +2,7 @@
 
 <h1 align="center">Vinyl Records Online Store</h1>
 
-<h4 align="center">React , CSS(SASS)</h4>
+<h4 align="center">React, CSS(SASS)</h4>
 
 <h2 align="center">Vinyl Records Online Store is made using React. It contains from
                 5 components. Data was created in separated file. Navigation
